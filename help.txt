@@ -1,0 +1,10 @@
+instalar
+* datetime
+* termcolor
+* keyboard
+* sqlite3 pip install db-sqlite3
+* configparser
+
+Actualizar
+
+py -m pip install --upgrade pip

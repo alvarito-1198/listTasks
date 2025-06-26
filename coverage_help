@@ -1,0 +1,24 @@
+Installation: Install Coverage.py using pip:
+pip install coverage
+2. Running Tests with Coverage: Use Coverage.py to run your tests and collect coverage data:
+
+coverage run -m unittest discover
+3. Generating Reports: After running your tests, generate a coverage report:
+
+coverage report
+coverage html
+The coverage report command provides a summary of your coverage in the terminal, while coverage html generates a detailed HTML report, which is great for visualizing your coverage.
+
+pytest-cov
+
+If you’re using pytest, the pytest-cov plugin is an excellent choice. It integrates Coverage.py with pytest, making it easy to measure test coverage. Here’s how to use pytest-cov:
+
+4. Installation: Install pytest and pytest-cov:
+
+pip install pytest pytest-cov
+5. Running Tests with Coverage: Use pytest to run your tests and collect coverage data:
+
+pytest - cov=my_package tests/
+6. Generating Reports: pytest-cov automatically generates a coverage report. You can customize the output with additional options:
+
+pytest - cov=my_package - cov-report=term-missing tests/

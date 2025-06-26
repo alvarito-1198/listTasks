@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>400</height>
+    <width>705</width>
+    <height>537</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -138,11 +138,17 @@
    <widget class="QPushButton" name="btnAdd">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>10</y>
-      <width>100</width>
-      <height>32</height>
+      <x>440</x>
+      <y>20</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
@@ -165,23 +171,24 @@ background: #7c7c7c
    <widget class="QTableWidget" name="tableList">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>120</x>
       <y>100</y>
-      <width>311</width>
-      <height>201</height>
+      <width>441</width>
+      <height>291</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Academy Engraved LET</family>
-      <pointsize>13</pointsize>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: white</string>
+     <string notr="true">color: white;
+selection-background-color: rgba(79, 80, 90, 0.8)</string>
     </property>
     <property name="tabKeyNavigation">
      <bool>false</bool>
@@ -204,9 +211,27 @@ background: #7c7c7c
     <property name="columnCount">
      <number>3</number>
     </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>30</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>30</number>
+    </attribute>
     <column>
      <property name="text">
       <string>id</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>18</pointsize>
+      </font>
      </property>
      <property name="background">
       <color>
@@ -229,6 +254,12 @@ background: #7c7c7c
      <property name="text">
       <string>descricion</string>
      </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
      <property name="background">
       <color>
        <red>0</red>
@@ -249,6 +280,12 @@ background: #7c7c7c
     <column>
      <property name="text">
       <string>state</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>18</pointsize>
+      </font>
      </property>
      <property name="background">
       <color>
@@ -271,11 +308,18 @@ background: #7c7c7c
    <widget class="QLabel" name="Label">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>120</x>
       <y>30</y>
-      <width>71</width>
-      <height>16</height>
+      <width>111</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: white</string>
@@ -290,11 +334,17 @@ background: #7c7c7c
    <widget class="QLineEdit" name="description">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>30</y>
-      <width>113</width>
-      <height>21</height>
+      <x>240</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: white</string>
@@ -303,11 +353,17 @@ background: #7c7c7c
    <widget class="QComboBox" name="cmbState">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>240</x>
       <y>60</y>
-      <width>111</width>
-      <height>32</height>
+      <width>181</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
@@ -335,11 +391,17 @@ border-color: white solid 2px</string>
    <widget class="QPushButton" name="btnUpdate">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>50</y>
-      <width>100</width>
-      <height>32</height>
+      <x>440</x>
+      <y>60</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">
@@ -359,11 +421,17 @@ background: #7c7c7c
    <widget class="QPushButton" name="btnDelete">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>310</y>
-      <width>311</width>
-      <height>32</height>
+      <x>120</x>
+      <y>400</y>
+      <width>441</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">

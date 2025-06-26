@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(400, 400)
+        MainWindow.resize(705, 537)
         MainWindow.setMinimumSize(QSize(400, 400))
         palette = QPalette()
         brush = QBrush(QColor(5, 4, 4, 255))
@@ -49,7 +49,11 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.btnAdd = QPushButton(self.centralwidget)
         self.btnAdd.setObjectName(u"btnAdd")
-        self.btnAdd.setGeometry(QRect(250, 10, 100, 32))
+        self.btnAdd.setGeometry(QRect(440, 20, 121, 31))
+        font = QFont()
+        font.setFamilies([u"Arial"])
+        font.setPointSize(18)
+        self.btnAdd.setFont(font)
         self.btnAdd.setAutoFillBackground(False)
         self.btnAdd.setStyleSheet(u"\n"
 ":enabled { \n"
@@ -66,27 +70,28 @@ class Ui_MainWindow(object):
         brush2 = QBrush(QColor(255, 255, 255, 255))
         brush2.setStyle(Qt.BrushStyle.SolidPattern)
         __qtablewidgetitem = QTableWidgetItem()
+        __qtablewidgetitem.setFont(font);
         __qtablewidgetitem.setBackground(QColor(0, 0, 0));
         __qtablewidgetitem.setForeground(brush2);
         self.tableList.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
+        __qtablewidgetitem1.setFont(font);
         __qtablewidgetitem1.setBackground(QColor(0, 0, 0));
         __qtablewidgetitem1.setForeground(brush2);
         self.tableList.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         brush3 = QBrush(QColor(255, 255, 255, 255))
         brush3.setStyle(Qt.BrushStyle.Dense1Pattern)
         __qtablewidgetitem2 = QTableWidgetItem()
+        __qtablewidgetitem2.setFont(font);
         __qtablewidgetitem2.setBackground(QColor(0, 0, 0));
         __qtablewidgetitem2.setForeground(brush3);
         self.tableList.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.tableList.setObjectName(u"tableList")
-        self.tableList.setGeometry(QRect(40, 100, 311, 201))
-        font = QFont()
-        font.setFamilies([u"Academy Engraved LET"])
-        font.setPointSize(13)
+        self.tableList.setGeometry(QRect(120, 100, 441, 291))
         self.tableList.setFont(font)
         self.tableList.setAutoFillBackground(True)
-        self.tableList.setStyleSheet(u"color: white")
+        self.tableList.setStyleSheet(u"color: white;\n"
+"selection-background-color: rgba(79, 80, 90, 0.8)")
         self.tableList.setTabKeyNavigation(False)
         self.tableList.setProperty(u"showDropIndicator", False)
         self.tableList.setDragDropOverwriteMode(False)
@@ -94,27 +99,39 @@ class Ui_MainWindow(object):
         self.tableList.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.tableList.setSortingEnabled(True)
         self.tableList.setColumnCount(3)
+        self.tableList.horizontalHeader().setMinimumSectionSize(30)
+        self.tableList.horizontalHeader().setHighlightSections(True)
+        self.tableList.horizontalHeader().setStretchLastSection(True)
+        self.tableList.verticalHeader().setMinimumSectionSize(30)
         self.Label = QLabel(self.centralwidget)
         self.Label.setObjectName(u"Label")
-        self.Label.setGeometry(QRect(40, 30, 71, 16))
+        self.Label.setGeometry(QRect(120, 30, 111, 21))
+        font1 = QFont()
+        font1.setFamilies([u"Arial"])
+        font1.setPointSize(18)
+        font1.setBold(True)
+        self.Label.setFont(font1)
         self.Label.setStyleSheet(u"color: white")
         self.Label.setTextFormat(Qt.TextFormat.AutoText)
         self.description = QLineEdit(self.centralwidget)
         self.description.setObjectName(u"description")
-        self.description.setGeometry(QRect(120, 30, 113, 21))
+        self.description.setGeometry(QRect(240, 20, 191, 31))
+        self.description.setFont(font)
         self.description.setStyleSheet(u"color: white")
         self.cmbState = QComboBox(self.centralwidget)
         self.cmbState.addItem("")
         self.cmbState.addItem("")
         self.cmbState.addItem("")
         self.cmbState.setObjectName(u"cmbState")
-        self.cmbState.setGeometry(QRect(120, 60, 111, 32))
+        self.cmbState.setGeometry(QRect(240, 60, 181, 31))
+        self.cmbState.setFont(font)
         self.cmbState.setAutoFillBackground(False)
         self.cmbState.setStyleSheet(u"color: white;\n"
 "border-color: white solid 2px")
         self.btnUpdate = QPushButton(self.centralwidget)
         self.btnUpdate.setObjectName(u"btnUpdate")
-        self.btnUpdate.setGeometry(QRect(250, 50, 100, 32))
+        self.btnUpdate.setGeometry(QRect(440, 60, 121, 31))
+        self.btnUpdate.setFont(font)
         self.btnUpdate.setStyleSheet(u"\n"
 ":enabled { \n"
 "color: white;\n"
@@ -126,7 +143,8 @@ class Ui_MainWindow(object):
 "}")
         self.btnDelete = QPushButton(self.centralwidget)
         self.btnDelete.setObjectName(u"btnDelete")
-        self.btnDelete.setGeometry(QRect(40, 310, 311, 32))
+        self.btnDelete.setGeometry(QRect(120, 400, 441, 31))
+        self.btnDelete.setFont(font)
         self.btnDelete.setStyleSheet(u"\n"
 ":enabled { \n"
 "color: white;\n"

@@ -90,7 +90,8 @@ class Ui_MainWindow(object):
         self.tableList.setGeometry(QRect(120, 100, 441, 291))
         self.tableList.setFont(font)
         self.tableList.setAutoFillBackground(True)
-        self.tableList.setStyleSheet(u"color: white;\n"
+        self.tableList.setStyleSheet(u"color: black;\n"
+"background: white;\n"
 "selection-background-color: rgba(79, 80, 90, 0.8)")
         self.tableList.setTabKeyNavigation(False)
         self.tableList.setProperty(u"showDropIndicator", False)
@@ -98,6 +99,7 @@ class Ui_MainWindow(object):
         self.tableList.setAlternatingRowColors(False)
         self.tableList.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         self.tableList.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.tableList.setGridStyle(Qt.PenStyle.SolidLine)
         self.tableList.setSortingEnabled(True)
         self.tableList.setColumnCount(3)
         self.tableList.horizontalHeader().setMinimumSectionSize(30)

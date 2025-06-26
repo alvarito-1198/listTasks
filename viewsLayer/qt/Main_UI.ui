@@ -187,7 +187,8 @@ background: #7c7c7c
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: white;
+     <string notr="true">color: black;
+background: white;
 selection-background-color: rgba(79, 80, 90, 0.8)</string>
     </property>
     <property name="tabKeyNavigation">
@@ -207,6 +208,9 @@ selection-background-color: rgba(79, 80, 90, 0.8)</string>
     </property>
     <property name="selectionBehavior">
      <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::PenStyle::SolidLine</enum>
     </property>
     <property name="sortingEnabled">
      <bool>true</bool>

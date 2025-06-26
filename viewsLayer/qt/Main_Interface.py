@@ -96,6 +96,7 @@ class Ui_MainWindow(object):
         self.tableList.setProperty(u"showDropIndicator", False)
         self.tableList.setDragDropOverwriteMode(False)
         self.tableList.setAlternatingRowColors(False)
+        self.tableList.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
         self.tableList.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.tableList.setSortingEnabled(True)
         self.tableList.setColumnCount(3)

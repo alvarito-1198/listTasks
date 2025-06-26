@@ -1,12 +1,12 @@
 import datetime
 
-from models_layer.Task import  Task
+from modelsLayer.Task import  Task
 from helpers.Enum_state import Enum_state
 from helpers.Enum_is_deleted import Enum_is_delete
 from helpers.Loggin_configuration import loggin_run
 from Config import Config
 import sqlite3
-from data_layer.ConnectionSqlite import Connectionsqlite
+from dataLayer.ConnectionSqlite import Connectionsqlite
 
 class ManagerTableTasks(Connectionsqlite):
     #el CRUD a la base de datos de la tabla TASK

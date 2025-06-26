@@ -2,7 +2,7 @@ from PySide6 import QtWidgets as qtw
 
 from controllerslayer.TaskController import TaskController
 from helpers.Enum_state import Enum_state
-from views_layer.qt.Main_Interface import Ui_MainWindow
+from viewsLayer.qt.Main_Interface import Ui_MainWindow
 
 from PySide6.QtWidgets import (QTableWidgetItem)
 

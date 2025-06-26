@@ -1,5 +1,5 @@
-from models_layer.Task import Task
-from data_layer.ManagerTableTasks import ManagerTableTasks
+from modelsLayer.Task import Task
+from dataLayer.ManagerTableTasks import ManagerTableTasks
 from helpers.Enum_state import Enum_state
 from helpers.Enum_is_deleted import Enum_is_delete
 import datetime

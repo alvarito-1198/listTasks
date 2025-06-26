@@ -1,7 +1,7 @@
 from PyQt6 import QtWidgets
 
-from views_layer.qt.Main_Interface import Ui_MainWindow
-from views_layer.Menu_view import Menu
+from viewsLayer.qt.Main_Interface import Ui_MainWindow
+from viewsLayer.Menu_view import Menu
 from helpers.Loggin_configuration import loggin_run
 import sys
 

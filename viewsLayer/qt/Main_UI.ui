@@ -147,7 +147,7 @@
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>18</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="autoFillBackground">
@@ -174,16 +174,16 @@ background: #7c7c7c
     </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>30</x>
       <y>100</y>
-      <width>441</width>
-      <height>291</height>
+      <width>641</width>
+      <height>331</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>18</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="mouseTracking">
@@ -240,7 +240,10 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
      <bool>true</bool>
     </attribute>
     <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>30</number>
+     <number>200</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>250</number>
     </attribute>
     <attribute name="horizontalHeaderHighlightSections">
      <bool>true</bool>
@@ -248,8 +251,20 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>true</bool>
     </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
     <attribute name="verticalHeaderMinimumSectionSize">
      <number>30</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
     </attribute>
     <column>
      <property name="text">
@@ -336,7 +351,7 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
    <widget class="QLabel" name="Label">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>80</x>
       <y>30</y>
       <width>111</width>
       <height>21</height>
@@ -345,7 +360,7 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>18</pointsize>
+      <pointsize>14</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -362,9 +377,9 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
    <widget class="QLineEdit" name="description">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>200</x>
       <y>20</y>
-      <width>191</width>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
@@ -381,9 +396,9 @@ selection-background-color: rgba(79, 80, 90, 0.9)</string>
    <widget class="QComboBox" name="cmbState">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>200</x>
       <y>60</y>
-      <width>181</width>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -428,7 +443,7 @@ border-color: white solid 2px</string>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>18</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -449,16 +464,16 @@ background: #7c7c7c
    <widget class="QPushButton" name="btnDelete">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>400</y>
-      <width>441</width>
+      <x>30</x>
+      <y>440</y>
+      <width>641</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Arial</family>
-      <pointsize>18</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="styleSheet">

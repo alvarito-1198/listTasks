@@ -169,6 +169,9 @@ background: #7c7c7c
     </property>
    </widget>
    <widget class="QTableWidget" name="tableList">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -182,6 +185,15 @@ background: #7c7c7c
       <family>Arial</family>
       <pointsize>18</pointsize>
      </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::FocusPolicy::ClickFocus</enum>
     </property>
     <property name="autoFillBackground">
      <bool>true</bool>
@@ -209,15 +221,24 @@ selection-background-color: rgba(79, 80, 90, 0.8)</string>
     <property name="selectionBehavior">
      <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
     </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
     <property name="gridStyle">
      <enum>Qt::PenStyle::SolidLine</enum>
     </property>
     <property name="sortingEnabled">
      <bool>true</bool>
     </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
     <property name="columnCount">
      <number>3</number>
     </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
     <attribute name="horizontalHeaderMinimumSectionSize">
      <number>30</number>
     </attribute>

@@ -87,8 +87,12 @@ class Ui_MainWindow(object):
         __qtablewidgetitem2.setForeground(brush3);
         self.tableList.setHorizontalHeaderItem(2, __qtablewidgetitem2)
         self.tableList.setObjectName(u"tableList")
+        self.tableList.setEnabled(True)
         self.tableList.setGeometry(QRect(120, 100, 441, 291))
         self.tableList.setFont(font)
+        self.tableList.setMouseTracking(True)
+        self.tableList.setTabletTracking(True)
+        self.tableList.setFocusPolicy(Qt.FocusPolicy.ClickFocus)
         self.tableList.setAutoFillBackground(True)
         self.tableList.setStyleSheet(u"color: black;\n"
 "background: white;\n"
@@ -99,9 +103,12 @@ class Ui_MainWindow(object):
         self.tableList.setAlternatingRowColors(False)
         self.tableList.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         self.tableList.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.tableList.setShowGrid(False)
         self.tableList.setGridStyle(Qt.PenStyle.SolidLine)
         self.tableList.setSortingEnabled(True)
+        self.tableList.setWordWrap(False)
         self.tableList.setColumnCount(3)
+        self.tableList.horizontalHeader().setCascadingSectionResizes(True)
         self.tableList.horizontalHeader().setMinimumSectionSize(30)
         self.tableList.horizontalHeader().setHighlightSections(True)
         self.tableList.horizontalHeader().setStretchLastSection(True)

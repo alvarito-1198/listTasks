@@ -201,7 +201,7 @@ background: #7c7c7c
     <property name="styleSheet">
      <string notr="true">color: black;
 background: white;
-selection-background-color: rgba(79, 80, 90, 0.8)</string>
+selection-background-color: rgba(79, 80, 90, 0.9)</string>
     </property>
     <property name="tabKeyNavigation">
      <bool>false</bool>

@@ -96,7 +96,7 @@ class Ui_MainWindow(object):
         self.tableList.setAutoFillBackground(True)
         self.tableList.setStyleSheet(u"color: black;\n"
 "background: white;\n"
-"selection-background-color: rgba(79, 80, 90, 0.8)")
+"selection-background-color: rgba(79, 80, 90, 0.9)")
         self.tableList.setTabKeyNavigation(False)
         self.tableList.setProperty(u"showDropIndicator", False)
         self.tableList.setDragDropOverwriteMode(False)
